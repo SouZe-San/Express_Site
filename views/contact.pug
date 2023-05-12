@@ -1,0 +1,28 @@
+extends base.pug 
+
+block style 
+    style 
+        include ../public/stylesheet/navStyle.css
+        include ../public/stylesheet/conStyle.css 
+
+
+block content
+    <section id="herosec">
+       <div class="left">
+            form(action="/contact", method="post") 
+                <div class="input">
+                    <input type="text" name="name" id="" placeholder="Enter Your Name">
+                </div>
+                <div class="input">
+                    <input type="email" name="email" id="" placeholder="Type Your E-mail">
+                </div>
+                <div class="input">
+                    <input type="text" name="number" pattern="[0-9]*" id="phone" placeholder="Give Us Your Phone Number" max = "9999999999">
+                </div>
+                button(type="submit") Confirm
+            </form>
+       </div>
+       <div class="right"> <h1>Sing Up</h1></div>
+            
+    </section>
+    

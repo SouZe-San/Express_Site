@@ -1,0 +1,34 @@
+section#herosec {
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  backdrop-filter: blur(2px);
+  gap: 1rem;
+}
+#herosec .text {
+  width: 80%;
+}
+
+#herosec .text h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: eras itc;
+  color: #ffffff8c;
+  font-weight: 700;
+}
+
+#herosec .text h3 {
+  font-family: lucida calligraphy;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff73;
+}
+
+#herosec .text h1:hover,
+#herosec .text h3:hover {
+  color: rgba(255, 255, 255, 0.812);
+}

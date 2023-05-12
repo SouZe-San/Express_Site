@@ -1,0 +1,36 @@
+
+app.get("/demo", (req, res) => {
+
+   res
+     .status(200)
+     .render("demo", { --> FileName
+       title: "Hey Harry", --> Parameter of 'title' Variables
+       message: "Hello there and thanks for telling me how to use pubG!",
+     })
+
+
+ *systematic way to sent parameters
+ const con = "This is the best content on the internet so far so use it wisely";
+ const params = { title: "PubG is the best game", content: con };
+ res.status(200).render("index.pug", params);
+});
+
+! In Pug File 
+#{title}, #{content}
+
+*-----------------
+THis tutorial for using pug template.
+in pug we write html in a short way--> Also we can write plain HTML in PUG
+
+*---------------------
+in Pug we can use variables, those value came as parameters from js file..
+
+
+*---------------
+
+we can create a base template , which have the common things..
+
+
+*-------------------
+
+when use view engine... the file of that template engine should placed in "view" named folder....That's set by default.... if want to change then use the set() of app ,... app.set('views', newPath)

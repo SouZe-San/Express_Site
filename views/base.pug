@@ -1,0 +1,25 @@
+//- THis Page will be the template for the full site...
+//- whatever present here those thing will be present  in everywhere....
+//- it will possible in concept of inheritance
+
+html
+  head
+    title My Site - #{title}
+    block scripts
+    block style
+        style 
+            include ../public/stylesheet/navStyle.css
+  body
+    nav 
+        .logo :XD
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/contact") Contact Us]
+
+    .bgBlock
+        img(src="../public/assets/bg.jpg", alt="")
+
+    block content
+    block footer
+        #footer All rights Reserved | copyright ©2023 SouzeSan

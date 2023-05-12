@@ -1,0 +1,112 @@
+section#herosec {
+  height: 86vh;
+  /* backdrop-filter: blur(2.5px); */
+  /*
+  background: center / contain no-repeat url("public/assets/bg.jpg");
+  font-size: 5rem;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
+  display: flex;
+}
+
+.left,
+.right {
+  display: flex;
+  width: 50%;
+  height: inherit;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+.left {
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.left form {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.left .input {
+  border: 1px solid rgba(186, 184, 184, 0.56);
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: inset 4px -1px 7px 0px #000000c9;
+  background: #00000014;
+  backdrop-filter: blur(2px);
+}
+button {
+  padding: 0.9rem 2.5rem;
+  background: #00000026;
+  outline: none;
+  border: 1px;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: inset 2px -2px 7px -2px black;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  border: 1px solid black;
+  color: white;
+}
+
+.left .input input {
+  padding: 0.8rem 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: white;
+}
+.left .input input::placeholder {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* input#phone :invalid {
+  color: red
+  ;
+} */
+
+.right {
+  justify-content: flex-end;
+  font-size: 5rem;
+  padding-bottom: 7rem;
+  backdrop-filter: blur(2px);
+  box-shadow: -2px 0px 20px 0px #303030b0, inset 4px 0px 7px -4px #00000063;
+  background: #98989836;
+}
+
+.right h1 {
+  background: url("public/assets/bg.jpg");
+  background-position: 87.6% 74%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 323%;
+}
+
+input#phone:invalid {
+  animation: shake 0.2s 3;
+  color: rgba(252, 2, 2, 0.661);
+}
+@keyframes shake {
+  25% {
+    translate: 6px 0;
+  }
+  50% {
+    translate: -6px 0;
+  }
+  75% {
+    translate: 6px 0;
+  }
+}

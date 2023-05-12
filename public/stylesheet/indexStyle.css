@@ -1,0 +1,34 @@
+section#herosec {
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  backdrop-filter: blur(2px);
+  gap: 1rem;
+}
+
+#herosec .text h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#herosec button {
+  padding: 1rem 2rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px #282828;
+  font-size: 1.1rem;
+  font-family: arial;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#herosec button:hover {
+  box-shadow: inset 0px 0px 20px 4px #0e0e0e;
+  color: white;
+  font-weight: 500;
+}
